@@ -1,0 +1,165 @@
+body {
+    background-color: #1c2127;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.window-appicon {
+    background-size: 50px !important;
+    width: 70px !important;
+    height: 64px !important;
+    filter: brightness(0) invert(1);
+    opacity: .75;
+}
+
+.window-title {
+    display: none;
+}
+
+.window-controls-container {
+    margin-left: auto !important;
+}
+
+.nav-bar {
+    background-color: #161a1f;
+    padding: 11px 40px 11px 40px;
+    color: #55aaff;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar > .hamburger {
+    padding-right: 55px;
+    height: 15px;
+    position: relative;
+    top: 13px;
+    align-self: flex-start;
+}
+
+.nav-bar > .hamburger > .line {
+    width: 15px;
+    height: 2px;
+    background-color: #55aaff;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .25s;
+}
+
+.nav-bar > .hamburger > .line-2 {
+    height: 2px;
+    top: 5px;
+}
+
+.nav-bar > .hamburger > .line-3 {
+    top: 10.5px;
+}
+
+.nav-bar > .hamburger:hover > .line {
+    background-color: #bbddff;
+    transition: .25s;
+}
+
+.nav-bar > .pages {
+    display: flex;
+    line-height: 18px;
+    flex-grow: 1;
+}
+
+.nav-bar > .pages > .links {
+    display: flex;
+    margin-right: auto;
+}
+
+.nav-bar > .pages > .links > h1 {
+    font-size: 18px;
+    padding: 0;
+    margin: 0 31px 0 0;
+    font-weight: 500;
+    transition: .25s;
+}
+
+.nav-bar > .pages > .icons > i {
+    margin: 0 42px 0 0;
+    transition: .25s;
+}
+
+.nav-bar > .pages > .links > h1.active {
+    color: white;
+    transition: .25s;
+}
+
+.nav-bar > .pages > .links > h1:not(.active):hover {
+    color: #bbddff;
+    transition: .25s;
+    cursor: default;
+}
+
+.nav-bar > .pages > .icons > i:hover {
+    color: #bbddff;
+    transition: .25s;
+    cursor: default;
+}
+
+.nav-bar > .user {
+    color: white;
+    display: flex;
+}
+
+.nav-bar > .user > .profile-picture {
+    border: 2px solid #55aaff;
+    border-radius: 4px;
+    padding: 1.25px;
+    max-height: 38.5px;
+    margin-right: 12px;
+}
+
+.nav-bar > .user > .profile-picture > img {
+    max-height: 32px;
+    border-radius: 3px;
+}
+
+.nav-bar > .user > .user-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-bar > .user > .user-data > .username {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.nav-bar > .user > .user-data > .level {
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar > .user > .user-data > .level > .points-img {
+    max-height: 12px;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+@media screen and (max-width: 1280px) {
+    .nav-bar {
+        justify-content: flex-start;
+    }
+
+    .nav-bar > .pages {
+        flex-direction: column;
+        line-height: 34px;
+    }
+}

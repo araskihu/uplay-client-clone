@@ -1,25 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import TitleBar from 'frameless-titlebar';
+
+import Navbar from './components/Navbar';
+
+// pages
+import News from './components/News';
+import Games from './components/Games';
+
+// images
+import icon from './img/Uplay_Logo.png';
+
+import './css/style.css';
+import './css/icons.css';
+
+const remote = window.require('electron').remote;
+const currentWindow = remote.getCurrentWindow();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <TitleBar
+        iconSrc={icon}
+        currentWindow={currentWindow}
+        platform={"win32"}
+        onClose={() => currentWindow.close()}
+        onMinimize={() => currentWindow.minimize()}
+        onMaximize={() => currentWindow.maximize()}
+        theme={{
+          "bar": {
+            "background": "#121519",
+            "borderBottom": "",
+            "height": "30px",
+            "icon": {
+              "width": "48px",
+              "height": "12px",
+            },
+          }
+        }}
+      />
+      <Navbar />
+      <div className="content">
+        <Switch>
+          <Route exact path="/" component={News} />
+          <Route exact path="/games" component={Games} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

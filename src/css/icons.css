@@ -1,0 +1,483 @@
+@charset "UTF-8";
+@font-face {
+  font-family: UplayIcons;
+  src: url(../fonts/uplayicons.617115db.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.icon:before,
+[class*=icon-]:before,
+[class^=icon-]:before {
+  font-family: UplayIcons !important;
+  font-size: 16px;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+}
+
+[class*=" icon-"],
+[class^=icon-] {
+  display: inline-block;
+}
+
+[class*=" icon-"].x2:before,
+[class^=icon-].x2:before {
+  font-size: 32px;
+}
+
+[class*=" icon-"].x075:before,
+[class^=icon-].x075:before {
+  font-size: 12px;
+}
+
+[class*=" icon-"].x125:before,
+[class^=icon-].x125:before {
+  font-size: 20px;
+}
+
+.icon-angle-left:before {
+  content: "";
+}
+
+.icon-angle-right:before {
+  content: "";
+}
+
+.icon-arrow-down:before {
+  content: "";
+}
+
+.icon-arrow-left:before {
+  content: "";
+}
+
+.icon-arrow-right:before {
+  content: "";
+}
+
+.icon-arrow-up:before {
+  content: "";
+}
+
+.icon-bell:before {
+  content: "";
+}
+
+.icon-block:before {
+  content: "";
+}
+
+.icon-box:before {
+  content: "";
+}
+
+.icon-browser-check-detailed:before {
+  content: "";
+}
+
+.icon-caret-small-s:before {
+  content: "";
+}
+
+.icon-cart:before {
+  content: "";
+}
+
+.icon-clock:before {
+  content: "";
+}
+
+.icon-close:before {
+  content: "";
+}
+
+.icon-cloud:before {
+  content: "";
+}
+
+.icon-club-badge:before {
+  content: "";
+}
+
+.icon-club-badge-prize:before {
+  content: "";
+}
+
+.icon-club-challenge:before {
+  content: "";
+}
+
+.icon-club-corner-star:before {
+  content: "";
+}
+
+.icon-club-lock:before {
+  content: "";
+}
+
+.icon-club-slot-empty:before {
+  content: "";
+}
+
+.icon-club-slot-locked:before {
+  content: "";
+}
+
+.icon-club-xp:before {
+  content: "";
+}
+
+.icon-cog:before {
+  content: "";
+}
+
+.icon-copy:before {
+  content: "";
+}
+
+.icon-detach:before {
+  content: "";
+}
+
+.icon-disc:before {
+  content: "";
+}
+
+.icon-disconnect:before {
+  content: "";
+}
+
+.icon-download:before {
+  content: "";
+}
+
+.icon-enter:before {
+  content: "";
+}
+
+.icon-exit:before {
+  content: "";
+}
+
+.icon-eye:before {
+  content: "";
+}
+
+.icon-eye-crossed:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-file:before {
+  content: "";
+}
+
+.icon-flag:before {
+  content: "";
+}
+
+.icon-friends:before {
+  content: "";
+}
+
+.icon-gamepad:before {
+  content: "";
+}
+
+.icon-gamepad-a:before {
+  content: "";
+}
+
+.icon-gamepad-b:before {
+  content: "";
+}
+
+.icon-gamepad-plus:before {
+  content: "";
+}
+
+.icon-gamepad-x:before {
+  content: "";
+}
+
+.icon-gamepad-y:before {
+  content: "";
+}
+
+.icon-gift:before {
+  content: "";
+}
+
+.icon-globe:before {
+  content: "";
+}
+
+.icon-grid:before {
+  content: "";
+}
+
+.icon-group:before {
+  content: "";
+}
+
+.icon-group-plus:before {
+  content: "";
+}
+
+.icon-hamburger:before {
+  content: "";
+}
+
+.icon-help:before {
+  content: "";
+}
+
+.icon-home:before {
+  content: "";
+}
+
+.icon-info:before {
+  content: "";
+}
+
+.icon-install:before {
+  content: "";
+}
+
+.icon-key:before {
+  content: "";
+}
+
+.icon-list:before {
+  content: "";
+}
+
+.icon-list-narrow:before {
+  content: "";
+}
+
+.icon-list-wide:before {
+  content: "";
+}
+
+.icon-lock:before {
+  content: "";
+}
+
+.icon-medal:before {
+  content: "";
+}
+
+.icon-mic:before {
+  content: "";
+}
+
+.icon-mic-off:before {
+  content: "";
+}
+
+.icon-monitor-phone-detailed:before {
+  content: "";
+}
+
+.icon-move-up:before {
+  content: "";
+}
+
+.icon-network:before {
+  content: "";
+}
+
+.icon-news:before {
+  content: "";
+}
+
+.icon-pause:before {
+  content: "";
+}
+
+.icon-pencil:before {
+  content: "";
+}
+
+.icon-phone-active:before {
+  content: "";
+}
+
+.icon-phone-down:before {
+  content: "";
+}
+
+.icon-phone-up:before {
+  content: "";
+}
+
+.icon-play:before {
+  content: "";
+}
+
+.icon-plus:before {
+  content: "";
+}
+
+.icon-quit:before {
+  content: "";
+}
+
+.icon-restart:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+.icon-speaker:before {
+  content: "";
+}
+
+.icon-speaker-active:before {
+  content: "";
+}
+
+.icon-speaker-off:before {
+  content: "";
+}
+
+.icon-speech-bubble:before {
+  content: "";
+}
+
+.icon-speech-bubble-plus:before {
+  content: "";
+}
+
+.icon-speech-bubbles:before {
+  content: "";
+}
+
+.icon-square:before {
+  content: "";
+}
+
+.icon-square-minus:before {
+  content: "";
+}
+
+.icon-stats:before {
+  content: "";
+}
+
+.icon-steam:before {
+  content: "";
+}
+
+.icon-three-dots:before {
+  content: "";
+}
+
+.icon-tick:before {
+  content: "";
+}
+
+.icon-tile-l:before {
+  content: "";
+}
+
+.icon-tile-m:before {
+  content: "";
+}
+
+.icon-tile-s:before {
+  content: "";
+}
+
+.icon-trash:before {
+  content: "";
+}
+
+.icon-u:before {
+  content: "";
+}
+
+.icon-unlock:before {
+  content: "";
+}
+
+.icon-uplay:before {
+  content: "";
+}
+
+.icon-uplay-caret:before {
+  content: "";
+}
+
+.icon-user:before {
+  content: "";
+}
+
+.icon-user-plus:before {
+  content: "";
+}
+
+.icon-warning:before {
+  content: "";
+}
+
+.icon-wrench:before {
+  content: "";
+}
+
+.icon-aco-logo:before {
+  content: "";
+}
+
+.icon-exclamation:before {
+  content: "";
+}
+
+.icon-angle-bottom:before {
+  content: "";
+}
+
+.icon-angle-top:before {
+  content: "";
+}
+
+.icon-badge-error:before {
+  content: "";
+}
+
+.icon-badge-tick:before {
+  content: "";
+}
+
+.icon-badge-warning:before {
+  content: "";
+}
+
+.icon-mail-detailed:before {
+  content: "";
+}
+
+.icon-lock-outline:before {
+  content: "";
+}
+
+.icon-circle-tick:before {
+  content: "";
+}
+
+.icon-uplay-cn:before {
+  content: "";
+}
+
+.icon-circle-star:before {
+  content: "";
+}
+/*# sourceMappingURL=icons.css.map */

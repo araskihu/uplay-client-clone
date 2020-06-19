@@ -1,0 +1,263 @@
+body {
+    background-color: #1c2127;
+    color: white;
+    font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.style_Logo__1AxaT {
+    margin-left: 10px;
+    filter: brightness(0) invert(1);
+    opacity: .75;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: #161a1f;
+    padding: 10px 40px 10px 40px;
+    color: #55aaff;
+    display: flex;
+    align-items: center;
+
+    .hamburger {
+        padding-right: 55px;
+        height: 15px;
+        position: relative;
+        top: 13px;
+        align-self: flex-start;
+
+        .line {
+            width: 15px;
+            height: 2px;
+            background-color: #55aaff;
+            border-radius: 8px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: .25s;
+        }
+
+        .line-2 {
+            height: 2px;
+            top: 5px;
+        }
+
+        .line-3 {
+            top: 10.5px;
+        }
+
+        &:hover {
+            .line {
+                background-color: #bbddff;
+                transition: .25s;
+            }
+        }
+    }
+
+    .pages {
+        display: flex;
+        flex-grow: 1;
+        line-height: 43px;
+
+        .links {
+            display: flex;
+            margin-right: auto;
+
+            a {
+                color: #55aaff;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 0;
+                margin: 0 31px 0 0;
+                font-weight: 500;
+                transition: .25s;
+
+                &.active {
+                    color: white;
+                    transition: .25s;
+                }
+
+                &:not(.active):hover {
+                    color: #bbddff;
+                    transition: .25s;
+                }
+
+                &:hover {
+                    cursor: default;
+                }
+            }
+        }
+
+        .icons {
+            i {
+                line-height: 40px;
+                margin: 0 42px 0 0;
+                transition: .25s;
+
+                &:hover {
+                    color: #bbddff;
+                    transition: .25s;
+                    cursor: default;
+                }
+            }
+        }
+    }
+
+    .user {
+        color: white;
+        display: flex;
+
+        .profile-picture {
+            border: 2px solid #55aaff;
+            border-radius: 4px;
+            padding: 1.25px;
+            max-height: 38.5px;
+            margin-right: 12px;
+
+            img {
+                max-height: 32px;
+                border-radius: 3px;
+            }
+        }
+
+        .user-data {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .username {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            .level {
+                font-weight: 300;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+
+                .points-img {
+                    max-height: 12px;
+                    margin-left: 20px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    padding: 12px 60px 20px 60px;
+}
+
+.card-box-container {
+    padding: 16px;
+
+    .card-box {
+        background-color: #0e151d;
+        height: 100%;
+    }
+}
+
+.news-header {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card-box-container {
+        max-width: 50%;
+
+        .news-banner {
+            max-width: 100%;
+        }
+
+        .news-title {
+            margin: 0;
+            padding: 10px 20px 20px 20px;
+            font-weight: 500;
+        }
+
+        &:last-child {
+            max-width: none;
+
+            .news-title {
+                padding-top: 16px;
+            }
+        }
+    }
+}
+
+.carousel-root {
+    button.control-arrow {
+        font-family: UplayIcons !important;
+        font-size: 16px;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        font-size: 32px !important;
+        padding: 5px 20px 5px 20px !important;
+        opacity: .75 !important;
+
+        &.control-prev:before {
+            content: "";
+            border: none;
+        }
+
+        &.control-next:before {
+            content: "";
+            border: none;
+        }
+
+        &:hover {
+            background: none !important;
+            opacity: 1 !important;
+        }
+    }
+
+    .control-dots {
+        margin: 5px 0;
+        .dot {
+            border-radius: 0 !important;
+            height: 6px !important;
+            width: 10px !important;
+            box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, .1) !important;
+            margin: 0 2px !important;
+    
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+    }
+
+    .carousel-status {
+        display: none;
+    }
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+@media screen and (max-width: 1280px) {
+    .nav-bar {
+        justify-content: flex-start;
+    }
+
+    .nav-bar {
+        .hamburger {
+            top: 11px;
+        }
+    }
+
+    .nav-bar {
+        .pages {
+            flex-direction: column;
+            line-height: 34px;
+        }
+    }
+}
